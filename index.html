@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Hotels Available</h2>
+            <div class="card-container">
+                <div class="card" onclick="selectCard(this)">
+                    <img src="paradise.jpg" alt="Hotel 1">
+                    <div class="card-body">
+                        <h3>Hotel Paradise</h3>
+                        <p>Located near the beach, offering luxury and comfort.</p>
+                        <p class="ratings">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="mountain retreat.jpg" alt="Hotel 2">
+                    <div class="card-body">
+                        <h3>Mountain Retreat</h3>
+                        <p>Perfect for a peaceful getaway.</p>
+                        <p class="ratings">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="city center.jpg" alt="Hotel 3">
+                    <div class="card-body">
+                        <h3>City Center Hotel</h3>
+                        <p>Conveniently located in the heart of the city.</p>
+                        <p class="ratings">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="eco lodge.jpg" alt="Hotel 4">
+                    <div class="card-body">
+                        <h3>Eco Lodge</h3>
+                        <p>A sustainable and tranquil environment.</p>
+                        <p class="ratings">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="luxury resort.jpg" alt="Hotel 5">
+                    <div class="card-body">
+                        <h3>Luxury Resort</h3>
+                        <p>Premium amenities and world-class service.</p>
+                        <p class="ratings">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Travel Services</h2>
+            <div class="card-container">
+                <div class="card" onclick="selectCard(this)">
+                    <img src="airport.jpg" alt="Travel Service 1">
+                    <div class="card-body">
+                        <h3>Airport Transfers</h3>
+                        <p>Seamless transportation to and from the airport.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="tour bus.jpg" alt="Travel Service 2">
+                    <div class="card-body">
+                        <h3>City Tours</h3>
+                        <p>Explore the best tourist attractions with our guided tours.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="car rental.jpg" alt="Travel Service 3">
+                    <div class="card-body">
+                        <h3>Car Rentals</h3>
+                        <p>Wide range of vehicles for personal use.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="adventure.jpg" alt="Travel Service 4">
+                    <div class="card-body">
+                        <h3>Adventure Packages</h3>
+                        <p>Thrilling experiences like hiking and rafting.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="cruise.jpg" alt="Travel Service 5">
+                    <div class="card-body">
+                        <h3>Cruise Bookings</h3>
+                        <p>Luxury cruise experiences for a memorable journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Types of Rooms</h2>
+            <div class="card-container">
+                <div class="card" onclick="selectCard(this)">
+                    <img src="deluxe room.jpg" alt="Room Type 1">
+                    <div class="card-body">
+                        <h3>Deluxe Room</h3>
+                        <p>Spacious and luxurious with a king-sized bed.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="standard room.jpg" alt="Room Type 2">
+                    <div class="card-body">
+                        <h3>Standard Room</h3>
+                        <p>Comfortable and budget-friendly with essential amenities.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="suite.jpg" alt="Room Type 3">
+                    <div class="card-body">
+                        <h3>Suite</h3>
+                        <p>Elegantly designed for a premium experience.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="family room.jpg" alt="Room Type 4">
+                    <div class="card-body">
+                        <h3>Family Room</h3>
+                        <p>Spacious accommodations perfect for families.</p>
+                    </div>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="single room.jpg" alt="Room Type 5">
+                    <div class="card-body">
+                        <h3>Single Room</h3>
+                        <p>Cozy and ideal for solo travelers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Choose Your Dates</h2>
+            <div class="card">
+                <div class="card-body">
+                    <div class="calendar">
+                        <label>
+                            Check-in:
+                            <input type="date">
+                        </label>
+                        <label>
+                            Check-out:
+                            <input type="date">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="location.href='homepage.html'">Home Page</button>
+            <button onclick="confirmBooking()">Confirm Booking</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

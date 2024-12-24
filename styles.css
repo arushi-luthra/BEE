@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50; /* Green color for header */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    color: #4CAF50; /* Green color for section headers */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure cards stay in one row */
+    overflow-x: auto; /* Allows horizontal scrolling if cards overflow */
+    gap: 2rem; /* Increase gap between cards */
+    padding-bottom: 1rem; /* Ensures space for scrollbar */
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Round the corners for a modern look */
+    overflow: hidden;
+    flex: 0 0 auto; /* Prevents cards from shrinking */
+    width: 300px; /* Uniform width for all cards */
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: white; /* Ensure consistent background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    padding: 1rem; /* Space inside the card */
+    z-index: 1; /* Ensures card is on top for interaction */
+    pointer-events: auto; /* Ensure that the card is clickable */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
+}
+
+.card.selected {
+    border: 2px solid #4CAF50; /* Highlight selected card */
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2); /* Stronger shadow for selection */
+}
+
+.card img {
+    width: 100%; /* Ensure image takes full width */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images don't get stretched */
+    border-radius: 5px; /* Round corners for images */
+    margin-bottom: 1rem; /* Space between image and content */
+    pointer-events: none; /* Disable interaction with image itself */
+}
+
+.card-body {
+    text-align: center;
+    color: #555; /* Subtle text color */
+}
+
+.card h3 {
+    color: #4CAF50; /* Green color for card titles */
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600; /* Bold title for a clean look */
+}
+
+.card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #777; /* Lighter text color for descriptions */
+}
+
+.ratings {
+    color: #FFD700;
+    margin-top: 0.5rem;
+}
+
+.calendar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50; /* Green color for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
